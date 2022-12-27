@@ -3,6 +3,8 @@ import './style.css';
 import './assets/less/less1.less'
 import './assets/scss/scss1.scss'
 import './assets/sass/sass1.sass'
+import './assets/styl/styl1.styl'
+
 import Icon from './icon.png';
 import printMe from './print.js';
 
@@ -34,7 +36,12 @@ function component() {
    const scssClassBox = document.createElement('div')
    scssClassBox.innerHTML = "world"
    scssClassBox.classList.add('scss-1-class')
-   document.body.appendChild(scssClassBox)  
+   document.body.appendChild(scssClassBox)
+
+   const stylClassBox = document.createElement('div')
+   stylClassBox.innerHTML = 'Styl'
+   stylClassBox.classList.add('styl-1-class')
+   document.body.appendChild(stylClassBox)
 
    return element;
  }
