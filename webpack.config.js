@@ -18,6 +18,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true
   },
+  devServer: {
+    static: './dist',
+    port: '8080'
+  },
+  optimization: {
+    runtimeChunk: 'single',
+  },
   module: {
     rules: [
       {
