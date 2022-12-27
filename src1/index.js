@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import './style.css';
 import './assets/less/less1.less'
+import './assets/scss/scss1.scss'
+import './assets/sass/sass1.sass'
 import Icon from './icon.png';
 import printMe from './print.js';
 
@@ -23,6 +25,16 @@ function component() {
    const myIcon = new Image();
    myIcon.src = Icon;
    element.appendChild(myIcon);
+
+   const sassClassBox = document.createElement('div')
+   sassClassBox.innerHTML = "hi"
+   sassClassBox.classList.add('sass-1-class')
+   document.body.appendChild(sassClassBox)
+
+   const scssClassBox = document.createElement('div')
+   scssClassBox.innerHTML = "world"
+   scssClassBox.classList.add('scss-1-class')
+   document.body.appendChild(scssClassBox)  
 
    return element;
  }
