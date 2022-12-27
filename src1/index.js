@@ -1,11 +1,13 @@
 import _ from 'lodash';
 import './style.css';
+import './assets/less/less1.less'
 import Icon from './icon.png';
 import printMe from './print.js';
 
 function component() {
   const element = document.createElement('div');
   const btn = document.createElement('button');
+  element.classList.add('test-class')
 
 
   btn.innerHTML = 'Click me and check the console!';
